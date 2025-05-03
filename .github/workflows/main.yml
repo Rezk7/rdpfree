@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - name: Download ngrok
-        run: Invoke-WebRequest https://github.com/ngrok/ngrok/releases/latest/download/ngrok-windows-amd64.zip -OutFile ngrok.zip
+        run: Invoke-WebRequest https://github.com/ngrok/ngrok/releases/latest/download/ngrok-windows-arm64.zip -OutFile ngrok.zip
 
       - name: Extract ngrok
         run: Expand-Archive ngrok.zip -DestinationPath .
